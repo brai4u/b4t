@@ -1,6 +1,8 @@
 bannerfortwitter
 ================
 
+![screenshot](http://i.imgur.com/75X6ckv.png)
+
 Banner for twitter es una app para facilitar la creacion de banners en los usuarios de twitter automatizando el proceso.
 Por ahora el proyecto se mantiene online bajo el dominio [onb4t.com.ar](https://onb4t.com.ar) o [bannerfortwitter.com.ar](https://bannerfortwitter.com.ar) que redirecciona al enterior.
 
