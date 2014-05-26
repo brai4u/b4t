@@ -1,0 +1,27 @@
+.masthead{padding:70px 0 80px;margin-bottom:0;color:#fff;}
+.masthead h1{font-size:120px;line-height:1;letter-spacing:-2px;}
+.masthead p{font-size:40px;font-weight:200;line-height:1.25;}
+a:hover {
+	color:#428bca;
+}
+
+#id{
+	padding 19px 50px;
+}
+
+#aviso{
+	cursor:pointer;
+}
+
+
+#msj1{
+	color:white;
+}
+
+#msj2{
+	color:white;
+}
+
+#botones{
+	padding-top: 30px;
+}
