@@ -1,5 +1,5 @@
 <?php
-  include ('includes/main.php')
+  include ('includes/main.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -21,19 +21,17 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="js/brai4u.js"></script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39036676-1']);
+      _gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39036676-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -44,20 +42,18 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 </div>
-  </head>
+</head>
 
-  <body>
-<div class="jumbotron masthead">
+<body>
+  <div class="jumbotron masthead">
 <?php
 $navegador = getenv("HTTP_USER_AGENT");
-if (!(preg_match("/MSIE/i", "$navegador")))
-  {
+if (!(preg_match("/MSIE/i", "$navegador"))){
 ?>
   <div class="container">
-    <?php
+<?php
     $status = $_GET['status'];
-    if ($status == generado)
-      {
+    if ($status == generado){
 ?>
     <h1 id="msj1">Gracias :)</h1>
     <p id="msj2">Gracias por usar bannerforwitter si te gusto, podes compartir tu sentimiento con tus amigos</p>
@@ -68,11 +64,10 @@ if (!(preg_match("/MSIE/i", "$navegador")))
       
       <a class="btn btn-primary btn-large" 
       href="https://www.facebook.com/sharer/sharer.php?u=http://bannerfortwitter.com.ar" onClick="window.open(this.href, this.target, 'width=500,height=500'); return false;"style="">Compartir en fb :)</a> 
-    </p>
-    <?php
-      }
-    else
-      {
+      </p>
+<?php
+}
+    else{
 ?>
     <h1 id="msj1">Crea tu banner</h1>
     <p id="msj2">Genera un banner para tu perfil de twitter en dos simples pasos! r&#225;pido y f&#225;cil.</p>
@@ -82,8 +77,8 @@ if (!(preg_match("/MSIE/i", "$navegador")))
     <a class="btn btn-primary btn-large" id="2" style="">Generar banner</a>
     <a class="btn btn-primary btn-large" id="generado" style="display: none">Generando banner <img  id="loading" src="loading.gif" style="display: none" height="32" width="32"></img></a>
     </p>
-    <?
-      }
+<?
+}
 ?>
 
 <table width="420" border="0" align="center" cellpadding="0" cellspacing="0" style="display:none">
@@ -98,14 +93,14 @@ if (!(preg_match("/MSIE/i", "$navegador")))
       <input name="action" type="hidden" value="upload" />      </td>
     </form>
   </tr>
-  </table>
-  </div>
-  <?php
-  }
+</table>
+</div>
+<?php
+}
 else
-  {
+{
 ?>
-    <div class="container">
+  <div class="container">
     <h2>Navegas con IE :(</h2>
     <p>Estas usando Internet Explorer, IE no es compatible con esta pagina. Pero no todo esta perdido te recomendamos estos navegadores para realizar tu banner</p>
     <p>
@@ -113,21 +108,20 @@ else
     <a class="btn btn-primary btn-large" href="http://www.mozilla.org/es-AR/firefox/new/" ><img src="mozilla.png"></img>Mozilla Firefox</a>
     </p>
   </div>
-  <?php
+<?php
   }
 ?>
   
 </div>
-
 <div class="bs-docs-social">
   <div class="container">
     <ul class="bs-docs-social-buttons">
-  <li class="follow-btn">
-  <div class="fb-like" data-href="http://www.facebook.com/banner4twitter" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+      <li class="follow-btn">
+      <div class="fb-like" data-href="http://www.facebook.com/banner4twitter" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
   </li>
       <li class="follow-btn">
-<a href="https://twitter.com/brai4u" class="twitter-follow-button" data-show-count="true" id="twitterbrai" data-size="small">Follow @brai4u</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <a href="https://twitter.com/brai4u" class="twitter-follow-button" data-show-count="true" id="twitterbrai" data-size="small">Follow @brai4u</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </li>
     <li><a href="https://plus.google.com/109710413719044160468" rel="publisher">Google+</a>
     </li>
@@ -136,11 +130,9 @@ else
 </div>
 
 <div class="container">
-
   <div class="marketing">
-
     <h2>¿C&#243;mo funciona?</h2>
-    <p class="marketing-byline">¿Quer&#233;s saber c&#243;mo funciona esta app?</p>
+  <p class="marketing-byline">¿Quer&#233;s saber c&#243;mo funciona esta app?</p>
   <div class="row-fluid">
       <div class="span4">
         <img class="marketing-img" height="300" width="200" src="img/justin.png">
@@ -162,23 +154,19 @@ else
   <br>
   <div class="members clearfix">
 <?php
-$link = mysql_connect("", "", "");
-mysql_select_db("", $link);
-$result = mysql_query("SELECT usuario, link FROM usuarios", $link);
-if ($row = mysql_fetch_array($result))
-  {
-    do
-      {
-
-        echo '<img src="' . $row['link'] . '" height="128" width="128"></img>';
-      } while ($row = mysql_fetch_array($result));
-  }
+  $link = mysql_connect("", "", "");
+  mysql_select_db("", $link);
+  $result = mysql_query("SELECT usuario, link FROM usuarios", $link);
+if ($row = mysql_fetch_array($result)){
+  do{
+    echo '<img src="' . $row['link'] . '" height="128" width="128"></img>';
+  } 
+    while ($row = mysql_fetch_array($result));
+}
 ?>
   </div>
 </div>
-
 </div>
-
     <footer class="footer">
       <div class="container">
         <p><a href="http://twitter.com/brai4u" target="_blank">@brai4u</a>
