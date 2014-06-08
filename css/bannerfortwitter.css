@@ -1,4 +1,4 @@
-.masthead{padding:70px 0 80px;margin-bottom:0;color:#fff;}
+.masthead{padding:70px 0 80px;margin-bottom:0;color:#fff;height: 100vh;width: 100vw;}
 .masthead h1{font-size:120px;line-height:1;letter-spacing:-2px;}
 .masthead p{font-size:40px;font-weight:200;line-height:1.25;}
 a:hover {
@@ -25,3 +25,121 @@ a:hover {
 #botones{
 	padding-top: 30px;
 }
+
+.masthead {
+padding: 70px 0 80px;
+margin-bottom: 0;
+color: #fff;
+height: 100vh;
+width: 100vw;
+}
+@media screen and (min-width: 768px)
+.jumbotron {
+padding-top: 48px;
+padding-bottom: 48px;
+}
+.jumbotron {
+padding: 30px;
+margin-bottom: 30px;
+color: inherit;
+background-color: #eee;
+}
+.masthead {
+padding: 70px 0 80px;
+margin-bottom: 0;
+color: #fff;
+}
+.jumbotron {
+position: relative;
+padding: 40px 0;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+background: #020031;
+background: -moz-linear-gradient(45deg, #020031 0%, #6d3353 100%);
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6d3353));
+background: -webkit-linear-gradient(45deg, #020031 0%,#6d3353 100%);
+background: -o-linear-gradient(45deg, #020031 0%,#6d3353 100%);
+background: -ms-linear-gradient(45deg, #020031 0%,#6d3353 100%);
+background: linear-gradient(45deg, #020031 0%,#6d3353 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#020031', endColorstr='#6d3353',GradientType=1);
+-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+
+.jumbotron .container {
+max-width: 100%;
+}
+.jumbotron .container {
+position: relative;
+z-index: 2;
+}
+@media (min-width: 1200px)
+.container {
+width: 1170px;
+}
+@media (min-width: 992px)
+.container {
+width: 970px;
+}
+@media (min-width: 768px)
+.container {
+width: 750px;
+}
+.container {
+margin-right: auto;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+@media (min-width: 1200px)
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+width: 1170px;
+}
+.container {
+margin-right: auto;
+margin-left: auto;
+}
+.container, .barraDeEstado-static-top .container, .barraDeEstado-fixed-top .container, .barraDeEstado-fixed-bottom .container {
+width: 940px;
+}
+
+h1{
+	font-weight: bold;
+}
+
+.jumbotron:after {
+content: '';
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: url(activeusers.png) repeat center center;
+opacity: 0.2;
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(5px);
+}
+
+.masthead .btn {
+padding: 19px 24px;
+font-size: 24px;
+font-weight: 200;
+color: #fff;
+border: 0;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+-webkit-transition: none;
+-moz-transition: none;
+transition: none;
+background-size: cover;
+background-position: center;
